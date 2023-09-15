@@ -11,11 +11,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
                 href="https://MindaRyn1.github.io/zh-cn/"
                 />
@@ -26,11 +21,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MindaRyn1.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -47,11 +37,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MindaRyn1.github.io/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/post/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -76,6 +61,7 @@
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MindaRyn1.github.io/zh-cn/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -87,16 +73,24 @@
                 href="https://MindaRyn1.github.io/zh-cn/page/"
                 />
   </url><url>
+    <loc>https://MindaRyn1.github.io/zh-cn/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MindaRyn1.github.io/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://MindaRyn1.github.io/zh-cn/archives/"
+                />
+  </url><url>
     <loc>https://MindaRyn1.github.io/zh-cn/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://MindaRyn1.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -114,6 +108,30 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://MindaRyn1.github.io/zh-cn/%E5%85%B3%E4%BA%8E/"
+                />
+  </url><url>
+    <loc>https://MindaRyn1.github.io/zh-cn/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MindaRyn1.github.io/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://MindaRyn1.github.io/zh-cn/search/"
+                />
+  </url><url>
+    <loc>https://MindaRyn1.github.io/zh-cn/%E5%A4%96%E9%93%BE/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MindaRyn1.github.io/link/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://MindaRyn1.github.io/zh-cn/%E5%A4%96%E9%93%BE/"
                 />
   </url>
 </urlset>

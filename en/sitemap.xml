@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://MindaRyn1.github.io/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-15T13:48:38+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -11,17 +11,38 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="https://MindaRyn1.github.io/"
                 />
   </url><url>
+    <loc>https://MindaRyn1.github.io/p/blog/</loc>
+    <lastmod>2023-09-15T13:48:38+08:00</lastmod>
+  </url><url>
+    <loc>https://MindaRyn1.github.io/post/</loc>
+    <lastmod>2023-09-15T13:48:38+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://MindaRyn1.github.io/zh-cn/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MindaRyn1.github.io/post/"
+                />
+  </url><url>
     <loc>https://MindaRyn1.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://MindaRyn1.github.io/zh-cn/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MindaRyn1.github.io/archives/"
+                />
   </url><url>
     <loc>https://MindaRyn1.github.io/page/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
@@ -45,11 +66,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="https://MindaRyn1.github.io/categories/"
                 />
@@ -66,24 +82,6 @@
     <loc>https://MindaRyn1.github.io/p/markdown-syntax-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MindaRyn1.github.io/post/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://MindaRyn1.github.io/zh-cn/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MindaRyn1.github.io/post/"
-                />
-  </url><url>
     <loc>https://MindaRyn1.github.io/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -93,11 +91,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://MindaRyn1.github.io/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -120,39 +113,22 @@
     <loc>https://MindaRyn1.github.io/tags/shortcodes/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MindaRyn1.github.io/p/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MindaRyn1.github.io/ar/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MindaRyn1.github.io/p/placeholder-text/"
-                />
-  </url><url>
-    <loc>https://MindaRyn1.github.io/tags/tag-with-whitespaces/</loc>
+    <loc>https://MindaRyn1.github.io/categories/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MindaRyn1.github.io/categories/test/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://MindaRyn1.github.io/zh-cn/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MindaRyn1.github.io/categories/test/"
-                />
-  </url><url>
-    <loc>https://MindaRyn1.github.io/categories/test-with-whitespaces/</loc>
+    <loc>https://MindaRyn1.github.io/categories/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MindaRyn1.github.io/tags/text/</loc>
+    <loc>https://MindaRyn1.github.io/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MindaRyn1.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MindaRyn1.github.io/tags/%D9%86%D8%B5/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MindaRyn1.github.io/tags/%D9%88%D8%B3%D9%85-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MindaRyn1.github.io/p/math-typesetting/</loc>
@@ -163,6 +139,19 @@
   </url><url>
     <loc>https://MindaRyn1.github.io/p/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MindaRyn1.github.io/categories/test/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://MindaRyn1.github.io/zh-cn/categories/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MindaRyn1.github.io/categories/test/"
+                />
   </url><url>
     <loc>https://MindaRyn1.github.io/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
@@ -177,8 +166,28 @@
                 href="https://MindaRyn1.github.io/about/"
                 />
   </url><url>
-    <loc>https://MindaRyn1.github.io/links/</loc>
+    <loc>https://MindaRyn1.github.io/link/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://MindaRyn1.github.io/zh-cn/%E5%A4%96%E9%93%BE/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MindaRyn1.github.io/link/"
+                />
   </url><url>
     <loc>https://MindaRyn1.github.io/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://MindaRyn1.github.io/zh-cn/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MindaRyn1.github.io/search/"
+                />
   </url>
 </urlset>
