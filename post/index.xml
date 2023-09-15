@@ -1,20 +1,146 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 老王同学的技术博客</title>
+        <title>Posts on 老王同学</title>
         <link>https://MindaRyn1.github.io/post/</link>
-        <description>Recent content in Posts on 老王同学的技术博客</description>
+        <description>Recent content in Posts on 老王同学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>TaoWei_WANG</copyright>
         <lastBuildDate>Fri, 15 Sep 2023 13:48:38 +0800</lastBuildDate><atom:link href="https://MindaRyn1.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Blog</title>
-        <link>https://MindaRyn1.github.io/p/blog/</link>
+        <title>日记</title>
+        <link>https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/</link>
         <pubDate>Fri, 15 Sep 2023 13:48:38 +0800</pubDate>
         
-        <guid>https://MindaRyn1.github.io/p/blog/</guid>
-        <description>&lt;h2 id=&#34;first-blog&#34;&gt;first blog&lt;/h2&gt;
-&lt;p&gt;hello 这是我的第一个 blog&lt;/p&gt;
+        <guid>https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/</guid>
+        <description>&lt;img src="https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/01.jpg" alt="Featured image of post 日记" /&gt;&lt;h2 id=&#34;记录写博客的第一天&#34;&gt;记录写博客的第一天&lt;/h2&gt;
+&lt;p&gt;天气：晴
+心情：糟糕&lt;/p&gt;
+&lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你是春日里吹来花信的风
+是夏夜里倒悬的星河
+星辰交替，季节更迭
+唯我对你的欢喜不变&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://music.163.com/#/song?id=1877070976&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;クリームソーダとシャンデリア&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+    
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=p1&amp;bvid=BV1R94y1W7pL&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/02.jpg&#34;
+	width=&#34;1280&#34;
+	height=&#34;1706&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/02_hu887a54f9d19903533479394e434895db_960595_480x0_resize_q75_box.jpg 480w, https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/02_hu887a54f9d19903533479394e434895db_960595_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;❤&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;
+&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/03.jpg&#34;
+	width=&#34;1280&#34;
+	height=&#34;1706&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/03_hu3b576350f98473259da91cfca2978fff_885489_480x0_resize_q75_box.jpg 480w, https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/03_hu3b576350f98473259da91cfca2978fff_885489_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Photo by 小张 on Unsplash&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/03.jpg&#34;
+	width=&#34;1280&#34;
+	height=&#34;1706&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/03_hu3b576350f98473259da91cfca2978fff_885489_480x0_resize_q75_box.jpg 480w, https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/03_hu3b576350f98473259da91cfca2978fff_885489_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Photo by 小张 on Unsplash&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt; &lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/04.jpg&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/04_hu7639071ad9a5d8c1c64845759a34708c_886609_480x0_resize_q75_box.jpg 480w, https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/04_hu7639071ad9a5d8c1c64845759a34708c_886609_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Photo by 小张 on Unsplash&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/05.jpg&#34;
+	width=&#34;1280&#34;
+	height=&#34;1706&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/05_hub8b6a6e03b51c0b879890fde45ebdc23_877966_480x0_resize_q75_box.jpg 480w, https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/05_hub8b6a6e03b51c0b879890fde45ebdc23_877966_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt; &lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/06.jpg&#34;
+	width=&#34;1280&#34;
+	height=&#34;1280&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/06_hu8c47fe0ba770c1d4523f2bf0d9879e32_78530_480x0_resize_q75_box.jpg 480w, https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/06_hu8c47fe0ba770c1d4523f2bf0d9879e32_78530_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/07.jpg&#34;
+	width=&#34;1280&#34;
+	height=&#34;1280&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/07_hubd984446593a863acab136f985c1d1d8_84996_480x0_resize_q75_box.jpg 480w, https://MindaRyn1.github.io/p/%E6%97%A5%E8%AE%B0/07_hubd984446593a863acab136f985c1d1d8_84996_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
