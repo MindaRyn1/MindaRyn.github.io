@@ -24,6 +24,14 @@
         <description></description>
         </item>
         <item>
+        <title>JavaSE</title>
+        <link>https://MindaRyn1.github.io/categories/javase/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/categories/javase/</guid>
+        <description>&lt;img src="https://MindaRyn1.github.io/categories/javase/1.jpg" alt="Featured image of post JavaSE" /&gt;</description>
+        </item>
+        <item>
         <title>syntax</title>
         <link>https://MindaRyn1.github.io/categories/syntax/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -38,14 +46,6 @@
         
         <guid>https://MindaRyn1.github.io/categories/themes/</guid>
         <description></description>
-        </item>
-        <item>
-        <title>JavaSE</title>
-        <link>https://MindaRyn1.github.io/categories/javase/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://MindaRyn1.github.io/categories/javase/</guid>
-        <description>&lt;img src="https://MindaRyn1.github.io/categories/javase/1.jpg" alt="Featured image of post JavaSE" /&gt;</description>
         </item>
         
     </channel>
