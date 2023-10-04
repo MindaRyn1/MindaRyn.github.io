@@ -198,6 +198,95 @@
 </description>
         </item>
         <item>
+        <title>Eclipse使用心得</title>
+        <link>https://MindaRyn1.github.io/p/eclipse%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/p/eclipse%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
+        <description>&lt;h2 id=&#34;常用快捷键&#34;&gt;常用快捷键&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一.补全代码的功能：alt+/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二.快速修复：ctrl+1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;三.自动导包 ctrl+shift+字母 o&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;四.使用单行注释 快捷键：ctrl+/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;五.多行注释快捷键，ctrl+shiflt+/和取消多行注释 ctrl+shiflt+\&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;六.复制指定行的代码：ctrl+alt+down 或者 ctrl+alt+up&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;七.删除指定行的代码：ctrl+d&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;八.恢复删除的代码，ctrl+z&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;九.上下移动代码，alt+down 和 alt+up&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十.shiflt+回车，切换到下一行代码空位&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十一.ctrl+shiflt+回车，切换到上一行代码空位&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十二.查看源码，ctrl+选中的结构&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十三.退回到前一个编辑页面：alt+left 和 alt+right&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十四.光标选中指定的类，查看继承树结构：ctrl+t&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十五.复制代码 ctrl+c，粘贴代码 ctrl+v，撤销代码 ctrl+z，反撤销 ctrl+y，剪切 ctrl+x，保存 ctrl+s，全选 ctrl+a&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十六.自动调整代码格式 ctrl+shift+F&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十七.选中数行，整体后移 tab 键&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十八.在当前类中，显示类的结构，并支持搜索指定的方法、方法等：ctrl+o&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十九.批量修改制定的变量名、方法名、类名等 alt+shift+r&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十.选中的结构的大小写切换：变成大写：ctrl+shift+x&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十一.选中的结构大小写切换：变成小写：ctrl+shift+y&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十二.调出生成 getter/setter/构造器等结构：alt+shift+s&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十三.显示当前选择资源（工程 or 文件）的属性：alt+enter&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十四.快速查找：参照选中的 Word 快速定位到下一个：ctrl+k&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十五.关闭当前窗口：ctrl+w&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十六.查看指定的结构使用过的地方：ctrl+alt+g&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>IDEA使用心得</title>
         <link>https://MindaRyn1.github.io/p/idea%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
         <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>

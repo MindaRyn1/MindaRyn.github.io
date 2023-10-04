@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>编译工具 on 老王同学</title>
+        <link>https://MindaRyn1.github.io/categories/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/</link>
+        <description>Recent content in 编译工具 on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>TaoWei_WANG</copyright>
+        <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://MindaRyn1.github.io/categories/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Eclipse使用心得</title>
+        <link>https://MindaRyn1.github.io/p/eclipse%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/p/eclipse%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
+        <description>&lt;h2 id=&#34;常用快捷键&#34;&gt;常用快捷键&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一.补全代码的功能：alt+/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二.快速修复：ctrl+1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;三.自动导包 ctrl+shift+字母 o&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;四.使用单行注释 快捷键：ctrl+/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;五.多行注释快捷键，ctrl+shiflt+/和取消多行注释 ctrl+shiflt+\&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;六.复制指定行的代码：ctrl+alt+down 或者 ctrl+alt+up&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;七.删除指定行的代码：ctrl+d&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;八.恢复删除的代码，ctrl+z&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;九.上下移动代码，alt+down 和 alt+up&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十.shiflt+回车，切换到下一行代码空位&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十一.ctrl+shiflt+回车，切换到上一行代码空位&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十二.查看源码，ctrl+选中的结构&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十三.退回到前一个编辑页面：alt+left 和 alt+right&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十四.光标选中指定的类，查看继承树结构：ctrl+t&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十五.复制代码 ctrl+c，粘贴代码 ctrl+v，撤销代码 ctrl+z，反撤销 ctrl+y，剪切 ctrl+x，保存 ctrl+s，全选 ctrl+a&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十六.自动调整代码格式 ctrl+shift+F&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十七.选中数行，整体后移 tab 键&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十八.在当前类中，显示类的结构，并支持搜索指定的方法、方法等：ctrl+o&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;十九.批量修改制定的变量名、方法名、类名等 alt+shift+r&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十.选中的结构的大小写切换：变成大写：ctrl+shift+x&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十一.选中的结构大小写切换：变成小写：ctrl+shift+y&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十二.调出生成 getter/setter/构造器等结构：alt+shift+s&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十三.显示当前选择资源（工程 or 文件）的属性：alt+enter&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十四.快速查找：参照选中的 Word 快速定位到下一个：ctrl+k&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十五.关闭当前窗口：ctrl+w&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二十六.查看指定的结构使用过的地方：ctrl+alt+g&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>IDEA使用心得</title>
+        <link>https://MindaRyn1.github.io/p/idea%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/p/idea%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
+        <description>&lt;h2 id=&#34;常用快捷键&#34;&gt;常用快捷键&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ctrl&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;介绍&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+鼠标左键&lt;/td&gt;
+&lt;td&gt;查看源码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Z&lt;/td&gt;
+&lt;td&gt;撤销&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+O&lt;/td&gt;
+&lt;td&gt;重写方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+F&lt;/td&gt;
+&lt;td&gt;在当前文件进行文本查找&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+R&lt;/td&gt;
+&lt;td&gt;在当前文件进行文本替换&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+F8&lt;/td&gt;
+&lt;td&gt;在 Debug 模式下，设置光标当前行为断点，如果当前已经是断点则去掉断点&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+F11&lt;/td&gt;
+&lt;td&gt;选中文件 / 文件夹，使用助记符设定 / 取消书签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;shift&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;介绍&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;shift+F9&lt;/td&gt;
+&lt;td&gt;Debug&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift+F10&lt;/td&gt;
+&lt;td&gt;Run&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift+F9&lt;/td&gt;
+&lt;td&gt;Debug&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift+F11&lt;/td&gt;
+&lt;td&gt;弹出书签显示层&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift+Tab&lt;/td&gt;
+&lt;td&gt;取消缩进&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ctrl+Alt&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;介绍&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Alt+L&lt;/td&gt;
+&lt;td&gt;格式化代码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Alt+O&lt;/td&gt;
+&lt;td&gt;优化导入的类，可以对当前文件和整个包目录使用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Alt+S&lt;/td&gt;
+&lt;td&gt;打开 IntelliJ IDEA 系统设置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Alt+Enter&lt;/td&gt;
+&lt;td&gt;光标所在行上空出一行，光标定位到新行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Alt+&amp;lt;-/-&amp;gt;&lt;/td&gt;
+&lt;td&gt;退回/前进到上一个操作的地方&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ctrl+Shift&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;介绍&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Shift+Z&lt;/td&gt;
+&lt;td&gt;取消撤销&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Shift+U&lt;/td&gt;
+&lt;td&gt;对选中的代码进行大 / 小写轮流转换&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+Shift&lt;/td&gt;
+&lt;td&gt;打开 IntelliJ IDEA 系统设置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其他&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;介绍&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;F2&lt;/td&gt;
+&lt;td&gt;跳转到下一个高亮错误 或 警告位置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;F11&lt;/td&gt;
+&lt;td&gt;添加书签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tab&lt;/td&gt;
+&lt;td&gt;缩进&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;常见文件类型图标&#34;&gt;常见文件类型图标&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/idea%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/01.jpg&#34;
+	width=&#34;654&#34;
+	height=&#34;733&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/idea%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/01_hue50e1157f282f91e50c66b23b5b91f91_99130_480x0_resize_q75_box.jpg 480w, https://MindaRyn1.github.io/p/idea%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/01_hue50e1157f282f91e50c66b23b5b91f91_99130_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Image 1&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;89&#34;
+		data-flex-basis=&#34;214px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
