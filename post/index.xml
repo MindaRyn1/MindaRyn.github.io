@@ -289,6 +289,53 @@
         <item>
         <title>Object类的主要方法</title>
         <link>https://MindaRyn1.github.io/p/object%E7%B1%BB%E7%9A%84%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95/</link>
+        <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/p/object%E7%B1%BB%E7%9A%84%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Object 类的主要方法&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NO.&lt;/th&gt;
+&lt;th&gt;方法名称&lt;/th&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;public Object{}&lt;/td&gt;
+&lt;td&gt;构造&lt;/td&gt;
+&lt;td&gt;构造方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;public boolean equal（Object obj）&lt;/td&gt;
+&lt;td&gt;普通&lt;/td&gt;
+&lt;td&gt;对象比较&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;public int hashcode（）&lt;/td&gt;
+&lt;td&gt;普通&lt;/td&gt;
+&lt;td&gt;取得 hash 值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;public String toString（）&lt;/td&gt;
+&lt;td&gt;普通&lt;/td&gt;
+&lt;td&gt;对象在打印时调用地址&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>Object类的主要方法</title>
+        <link>https://MindaRyn1.github.io/p/object%E7%B1%BB%E7%9A%84%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95/</link>
         <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
         
         <guid>https://MindaRyn1.github.io/p/object%E7%B1%BB%E7%9A%84%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95/</guid>
