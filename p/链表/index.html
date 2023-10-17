@@ -745,7 +745,6 @@
 </span><span class="lnt">36
 </span><span class="lnt">37
 </span><span class="lnt">38
-</span><span class="lnt">39
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
@@ -770,8 +769,7 @@
 </span></span><span class="line"><span class="cl">    <span class="c1">//表头插入
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="o">(</span><span class="n">position</span> <span class="o">==</span> <span class="n">1</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="n">nodeInsert</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// 这里可以直接 return nodeInsert;还可以这么写：
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">head</span> <span class="o">=</span> <span class="n">nodeInsert</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">head</span> <span class="o">=</span> <span class="n">nodeInsert</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">head</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl">
@@ -779,8 +777,8 @@
 </span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">//这里position被上面的size被限制住了，不用考虑pNode=null
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">while</span> <span class="o">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="n">position</span> <span class="o">-</span> <span class="n">1</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">pNode</span> <span class="o">=</span> <span class="n">pNode</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">count</span><span class="o">++;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pNode</span> <span class="o">=</span> <span class="n">pNode</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>     <span class="c1">//从head开始遍历，找到目的节点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">count</span><span class="o">++;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl">    <span class="n">nodeInsert</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">pNode</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">pNode</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">nodeInsert</span><span class="o">;</span>
@@ -879,6 +877,7 @@
 </span><span class="lnt">30
 </span><span class="lnt">31
 </span><span class="lnt">32
+</span><span class="lnt">33
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
@@ -888,11 +887,12 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return 删除后的链表头节点
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
 </span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="n">Node</span> <span class="nf">deleteNode</span><span class="o">(</span><span class="n">Node</span> <span class="n">head</span><span class="o">,</span> <span class="kt">int</span> <span class="n">position</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">head</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//判断链表是否空
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="o">(</span><span class="n">head</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="n">getListLength</span><span class="o">(</span><span class="n">head</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//思考一下，这里为什么是size，而不是size+1
+</span></span><span class="line"><span class="cl">    <span class="c1">//思考一下，这里为什么是size，而不是size+1（链表最长为size,删除不了size+1的结点）
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="o">(</span><span class="n">position</span> <span class="o">&gt;</span> <span class="n">size</span> <span class="o">||</span> <span class="n">position</span> <span class="o">&lt;</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入的参数有误&#34;</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">head</span><span class="o">;</span>
@@ -904,8 +904,8 @@
 </span></span><span class="line"><span class="cl">        <span class="n">Node</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">head</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="o">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="n">position</span> <span class="o">-</span> <span class="n">1</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">++;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="na">next</span><span class="o">;</span> <span class="c1">//从head开始遍历，找到目的节点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">count</span><span class="o">++;</span>
 </span></span><span class="line"><span class="cl">        <span class="o">}</span>
 </span></span><span class="line"><span class="cl">        <span class="n">Node</span> <span class="n">curNode</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="n">cur</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">curNode</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
