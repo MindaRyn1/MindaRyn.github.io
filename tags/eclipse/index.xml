@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Eclipse on 老王同学</title>
+        <link>https://MindaRyn1.github.io/tags/eclipse/</link>
+        <description>Recent content in Eclipse on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Wang_Taowei的技术博客</copyright>
+        <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://MindaRyn1.github.io/tags/eclipse/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Eclipse使用心得</title>
+        <link>https://MindaRyn1.github.io/p/eclipse%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/p/eclipse%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
+        <description>&lt;img src="https://MindaRyn1.github.io/p/eclipse%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/01.jpg" alt="Featured image of post Eclipse使用心得" /&gt;&lt;h2 id=&#34;常用快捷键&#34;&gt;常用快捷键&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;介绍快捷键&lt;/th&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;补全代码&lt;/td&gt;
+&lt;td&gt;alt+/R&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;快速修复&lt;/td&gt;
+&lt;td&gt;ctrl+1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;自动导包&lt;/td&gt;
+&lt;td&gt;ctrl+shift+o&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;单行注释&lt;/td&gt;
+&lt;td&gt;ctrl+/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;多行注释&lt;/td&gt;
+&lt;td&gt;ctrl+shiflt+/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;删除指定行的代码&lt;/td&gt;
+&lt;td&gt;ctrl+d&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;上下移动代码&lt;/td&gt;
+&lt;td&gt;alt+down alt+up&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;切换到下一行代码空位&lt;/td&gt;
+&lt;td&gt;shiflt+enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;切换到上一行代码空位&lt;/td&gt;
+&lt;td&gt;ctrl+shiflt+enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;光标选中指定的类，查看继承树结构&lt;/td&gt;
+&lt;td&gt;ctrl+t&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;自动调整代码格式&lt;/td&gt;
+&lt;td&gt;ctrl+shift+F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;在当前类中，显示类的结构，并支持搜索指定的方法、方法等&lt;/td&gt;
+&lt;td&gt;ctrl+o&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;批量修改制定的变量名、方法名、类名等&lt;/td&gt;
+&lt;td&gt;alt+shift+r&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;选中的结构的大小写切换：变成大写&lt;/td&gt;
+&lt;td&gt;ctrl+shift+x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;选中的结构大小写切换：变成小写&lt;/td&gt;
+&lt;td&gt;ctrl+shift+y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;调出生成 getter/setter/构造器等结构&lt;/td&gt;
+&lt;td&gt;alt+shift+s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;显示当前选择资源（工程 or 文件）的属性&lt;/td&gt;
+&lt;td&gt;alt+enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;快速查找定位到下一个&lt;/td&gt;
+&lt;td&gt;ctrl+k&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;查看指定的结构使用过的地方&lt;/td&gt;
+&lt;td&gt;ctrl+alt+g&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

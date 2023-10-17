@@ -7,7 +7,39 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Wang_Taowei的技术博客</copyright>
-        <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://MindaRyn1.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 16 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://MindaRyn1.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>算法</title>
+        <link>https://MindaRyn1.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+        <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Eclipse</title>
+        <link>https://MindaRyn1.github.io/tags/eclipse/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/tags/eclipse/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Git</title>
+        <link>https://MindaRyn1.github.io/tags/git/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/tags/git/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>IDEA</title>
+        <link>https://MindaRyn1.github.io/tags/idea/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/tags/idea/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>css</title>
         <link>https://MindaRyn1.github.io/tags/css/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
