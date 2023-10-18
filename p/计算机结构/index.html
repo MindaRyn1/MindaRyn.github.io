@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='CPU 结构 CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、内部总线组成 运算器组成: 算数逻辑单元 ALU(Arithmetic logic unit): 实现对数据的算数和逻辑运算 累加寄存器 AC(Accumulator): 提'>
+<title>计算机结构</title>
+
+<link rel='canonical' href='https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/'>
+
+<link rel="stylesheet" href="/scss/style.min.0ca9b63a946ee148395734603adaa07c26a9e0e10d0ae9cf09bd5dc72800c449.css"><meta property='og:title' content='计算机结构'>
+<meta property='og:description' content='CPU 结构 CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、内部总线组成 运算器组成: 算数逻辑单元 ALU(Arithmetic logic unit): 实现对数据的算数和逻辑运算 累加寄存器 AC(Accumulator): 提'>
+<meta property='og:url' content='https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/'>
+<meta property='og:site_name' content='老王同学'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机结构' /><meta property='article:published_time' content='2023-10-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-10T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="计算机结构">
+<meta name="twitter:description" content="CPU 结构 CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、内部总线组成 运算器组成: 算数逻辑单元 ALU(Arithmetic logic unit): 实现对数据的算数和逻辑运算 累加寄存器 AC(Accumulator): 提">
+    <link rel="shortcut icon" href="/img/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hub05b2dc0cd57d33f871b1bc060a56313_110535_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🌏</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">老王同学</a></h1>
+            <h2 class="site-description">愿所有的美好都如期而至❤️</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/401992652?spm_id_from=333.1007.0.0'
+                        target="_blank"
+                        title="bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-bilibili" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/MindaRyn1'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%A4%96%E9%93%BE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>外链</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://MindaRyn1.github.io/" selected>中文</option>
+                        
+                            <option value="https://MindaRyn1.github.io/en/" >English</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                <form action="/search/" class="search-form widget" >
+        <p>
+            <label>搜索</label>
+            <input name="keyword" required placeholder="输入关键词..." />
+        
+            <button title="搜索">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+            </button>
+        </p>
+    </form>
+            
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#cpu-结构">CPU 结构</a>
+      <ol>
+        <li><a href="#运算器组成">运算器组成:</a></li>
+        <li><a href="#控制器">控制器</a></li>
+      </ol>
+    </li>
+    <li><a href="#计算机体系结构分类--flynn">计算机体系结构分类&ndash;Flynn</a></li>
+    <li><a href="#cisc-与-risc">CISC 与 RISC</a></li>
+    <li><a href="#流水线技术">流水线技术</a>
+      <ol>
+        <li><a href="#计算流水线总共用时">计算流水线总共用时</a></li>
+        <li><a href="#计算流水线的吞吐率">计算流水线的吞吐率</a></li>
+        <li><a href="#流水线加速比计算">流水线加速比计算</a></li>
+        <li><a href="#流水线的效率">流水线的效率</a></li>
+      </ol>
+    </li>
+    <li><a href="#存储结构">存储结构</a>
+      <ol>
+        <li><a href="#计算机层次存储结构">计算机层次存储结构</a></li>
+        <li><a href="#局部性原理">局部性原理</a></li>
+        <li><a href="#主存储器">主存储器</a>
+          <ol>
+            <li><a href="#主存的分类">主存的分类</a></li>
+            <li><a href="#主存的编码">主存的编码</a></li>
+          </ol>
+        </li>
+        <li><a href="#磁盘工作原理">磁盘工作原理</a></li>
+      </ol>
+    </li>
+    <li><a href="#总线系统">总线系统</a></li>
+    <li><a href="#系统可靠性分析">系统可靠性分析</a></li>
+    <li><a href="#效验码">效验码</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">分类</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/categories/javase/" class="font_size_10">
+                JavaSE
+            </a>
+        
+            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="font_size_5">
+                计算机基础
+            </a>
+        
+            <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="font_size_3">
+                开发工具
+            </a>
+        
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="font_size_3">
+                数据结构与算法
+            </a>
+        
+            <a href="/categories/%E8%AE%B0%E5%BD%95%E7%94%9F%E6%B4%BB/" class="font_size_3">
+                记录生活
+            </a>
+        
+            <a href="/categories/syntax/" class="font_size_1">
+                syntax
+            </a>
+        
+            <a href="/categories/themes/" class="font_size_1">
+                themes
+            </a>
+        
+    </div>
+</section>
+
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">标签云</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="font_size_4">
+                数据的表示
+            </a>
+        
+            <a href="/tags/%E7%AE%97%E6%B3%95/" class="font_size_3">
+                算法
+            </a>
+        
+            <a href="/tags/css/" class="font_size_1">
+                css
+            </a>
+        
+            <a href="/tags/eclipse/" class="font_size_1">
+                Eclipse
+            </a>
+        
+            <a href="/tags/git/" class="font_size_1">
+                Git
+            </a>
+        
+            <a href="/tags/html/" class="font_size_1">
+                html
+            </a>
+        
+            <a href="/tags/idea/" class="font_size_1">
+                IDEA
+            </a>
+        
+            <a href="/tags/markdown/" class="font_size_1">
+                markdown
+            </a>
+        
+            <a href="/tags/themes/" class="font_size_1">
+                themes
+            </a>
+        
+            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/" class="font_size_1">
+                计算机结构
+            </a>
+        
+    </div>
+</section>
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" >
+                计算机基础
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/">计算机结构</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 10, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 3 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="cpu-结构">CPU 结构</h2>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01.png"
+	width="859"
+	height="413"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01_hue84329ce1bf00c5fd15f639bbd961c98_231429_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01_hue84329ce1bf00c5fd15f639bbd961c98_231429_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="cpu 结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="207"
+		data-flex-basis="499px"
+	
+>
+CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、内部总线组成<br></p>
+<h3 id="运算器组成">运算器组成:</h3>
+<p><strong>算数逻辑单元 ALU(Arithmetic logic unit):</strong> <br>
+实现对数据的算数和逻辑运算<br>
+<strong>累加寄存器 AC(Accumulator):</strong> <br>
+提供数据并暂存运算结果<br>
+<strong>数据缓冲寄存器 DR(Data Register):</strong> <br>
+作为 CPU 和内存、外设之间数据传送的中转站，暂时存放内存的指令或数据<br>
+<strong>状态条件寄存器 PSW(Program Status Word):</strong> <br>
+保存指令运行结果相关的标志位，如中断或进位等标志<br></p>
+<h3 id="控制器">控制器</h3>
+<p><strong>指令寄存器 IR （ Instruction Register ） :</strong> <br>
+暂存当前 CPU 正在执行的指令【操作码和地址码在这里存储】对于用户是透明的<br>
+<strong>程序计数器 PC （ Program Counter ）：</strong> <br> 用于存放下一条指令的地址<br>
+<strong>地址寄存器 AR （ Address Register ）：</strong> <br> 保存当前 CPU 所访问的内存地址<br>
+<strong>指令译码器 ID （ Instruction Decoder）：</strong> <br> 分析指令操作码</p>
+<h2 id="计算机体系结构分类--flynn">计算机体系结构分类&ndash;Flynn</h2>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02.png"
+	width="774"
+	height="477"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02_hud6d349beb81fc54d801c40e3210e8fa9_335143_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02_hud6d349beb81fc54d801c40e3210e8fa9_335143_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="体系"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="162"
+		data-flex-basis="389px"
+	
+>
+<strong>SISD</strong> 单片机 <br>
+<strong>SIMD</strong> 并行，阵列处理（对数组操作）<br>
+<strong>MISD</strong> 理论模型 <br>
+<strong>MIMD</strong> 个人 pc，计算机系统</p>
+<h2 id="cisc-与-risc">CISC 与 RISC</h2>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03.png"
+	width="855"
+	height="288"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03_hu36107b6de83165442ede1edc272c4a42_198083_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03_hu36107b6de83165442ede1edc272c4a42_198083_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="296"
+		data-flex-basis="712px"
+	
+>
+<strong>CISC</strong> 计算机不发达时期的产物，指令多，复杂
+<strong>RISC</strong> 现代计算机，指令少，复杂度低，引入了寄存器，效率高</p>
+<h2 id="流水线技术">流水线技术</h2>
+<p>流水线周期：执行时间最长的一段
+流水线是指在程序执行时，多条指令重叠进行操作的一种准<strong>并行处理</strong>实现技术。
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/04.png"
+	width="1196"
+	height="355"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/04_hu1b47c94bb7d0397e8c57f6b920e38b5f_171007_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/04_hu1b47c94bb7d0397e8c57f6b920e38b5f_171007_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="流水线"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="336"
+		data-flex-basis="808px"
+	
+></p>
+<h3 id="计算流水线总共用时">计算流水线总共用时</h3>
+<p><strong>一条完整指令的执行时间 = 取指时间 + 分析时间 + 执行时间</strong></br>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/05.png"
+	width="411"
+	height="147"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/05_hue23cdacaeb7e434eb7cbe59225bce6c5_83310_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/05_hue23cdacaeb7e434eb7cbe59225bce6c5_83310_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="流水线"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="279"
+		data-flex-basis="671px"
+	
+>
+k 为分的段数</p>
+<h3 id="计算流水线的吞吐率">计算流水线的吞吐率</h3>
+<p>吞吐率=指令条数/ 流水线总共用时</br>
+最大吞吐率 = 1 / 流水线周期</p>
+<h3 id="流水线加速比计算">流水线加速比计算</h3>
+<p>S= 不适用流水线执行时间(指令执行时间) / 使用流水线执行时间</br>
+故 S 越大越好</p>
+<h3 id="流水线的效率">流水线的效率</h3>
+<p>E=灰区/总区
+每个工作段的时间相等，体现在图里就是白色区域利用的多，效率往往高</p>
+<h2 id="存储结构">存储结构</h2>
+<h3 id="计算机层次存储结构">计算机层次存储结构</h3>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06.png"
+	width="710"
+	height="379"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06_hu99f26893472d824f0306a0b1cc13ae80_143542_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06_hu99f26893472d824f0306a0b1cc13ae80_143542_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="存储结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="187"
+		data-flex-basis="449px"
+	
+>
+引入<strong>cache</strong>的原因：存在局部性原理 Cache 和 CPU 交互反交互的时候，暂停和内存的交互，速度就会很快。引入 cache 在提高速度的同时，也没有增加多少成本</br>
+<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07.png"
+	width="774"
+	height="208"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07_hu24809760cd2a6c7138d1e54c88976dce_124785_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07_hu24809760cd2a6c7138d1e54c88976dce_124785_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="cache"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="372"
+		data-flex-basis="893px"
+	
+></p>
+<h3 id="局部性原理">局部性原理</h3>
+<ol>
+<li>时间局部性:刚刚访问完数据又立即访问，不需要等待。</li>
+<li>空间局部性:例如数组的初始化处理，在将数组初始化的过程中，初始化完这一个位置后立即去初始化下一个临近的空间。</li>
+<li>工作集原理:工作即是进程，运行时被频繁访问的页面集合。将这些集合打包放进 Cache 里面去，就不需要频繁的替换掉。</li>
+</ol>
+<h3 id="主存储器">主存储器</h3>
+<h4 id="主存的分类">主存的分类</h4>
+<p><strong>随机存取存储器：</strong> DRAM 动态 RAM,SRAM 静态 RAM（断电后无法写入保存数据）</p>
+<p><strong>只读存储器：</strong> MROM,PROM,EPROM,flash memory（断电后依然可以写入保存数据）</p>
+<h4 id="主存的编码">主存的编码</h4>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/08.png"
+	width="879"
+	height="533"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/08_hu08274d147ee0afb4257b4f2f0a7786af_582613_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/08_hu08274d147ee0afb4257b4f2f0a7786af_582613_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="cache"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="164"
+		data-flex-basis="395px"
+	
+></p>
+<h3 id="磁盘工作原理">磁盘工作原理</h3>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09.png"
+	width="714"
+	height="345"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09_hu906116da96b635f7922f664d4684b9f5_279930_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09_hu906116da96b635f7922f664d4684b9f5_279930_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="磁盘"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="206"
+		data-flex-basis="496px"
+	
+></p>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/10.png"
+	width="946"
+	height="455"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/10_hudde6d10c43d5a561e346ac9d8878eb05_696078_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/10_hudde6d10c43d5a561e346ac9d8878eb05_696078_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="207"
+		data-flex-basis="498px"
+	
+></p>
+<ol>
+<li>由题意得当 R0 读取完毕，此时 R1 并不在磁针的位置，要等到 R1 转到磁针位置 R0~R10 耗时(33+3)x10。R11 耗时(3+3)</li>
+<li>如图此时为最优分布，总耗时为(3+3)*11<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/11.png"
+	width="256"
+	height="261"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/11_hu55b4cfadebb8d910082c8f1ccad21b54_61656_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/11_hu55b4cfadebb8d910082c8f1ccad21b54_61656_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="98"
+		data-flex-basis="235px"
+	
+></li>
+</ol>
+<h2 id="总线系统">总线系统</h2>
+<ol>
+<li><strong>内部总线</strong></br>
+通常是指微机内部的，外部芯片与处理器之间的联系，属于是芯片级别的总线</li>
+<li><strong>系统总线</strong></br>
+属于是微机中各个插件板与系统之间的总线，属于是插件板级别的总线，如 PCI，VGA
+<ol>
+<li><strong>数据总线</strong>:是用来传输数据的，比如说计算机的 32 位和 64 位，说明了系统总线的宽度就是这么个位数，那么一个周期能够传输的数据是 32164bit。</li>
+<li><strong>地址总线</strong>:若地址总线的位数是 32 位，那么它代表的地址总线宽度为 2^32，即 4G。因此操作系统是 32 位的，那么他能管理的内存最多是 4g，当然也有硬件有一定关系。</li>
+<li><strong>控制总线</strong>: 发送相应的控制信号的总线。</li>
+</ol>
+</li>
+<li><strong>外部总线</strong></br>
+属于是外部设备的总线。</li>
+</ol>
+<h2 id="系统可靠性分析">系统可靠性分析</h2>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image.png"
+	width="895"
+	height="207"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image_hu13ccf68ac75a008bdbd29e84f3037c11_59260_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image_hu13ccf68ac75a008bdbd29e84f3037c11_59260_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="432"
+		data-flex-basis="1037px"
+	
+></p>
+<ol>
+<li>先判断是串联还是并联</li>
+<li>算出每一个子系统的可靠度</li>
+<li>总体计算可靠度</li>
+</ol>
+<h2 id="效验码">效验码</h2>
+<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image-1.png"
+	width="756"
+	height="315"
+	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image-1_hu10f359d6ef057cd79e57ec1482e77f4c_161371_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image-1_hu10f359d6ef057cd79e57ec1482e77f4c_161371_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="240"
+		data-flex-basis="576px"
+	
+>
+<strong>海明码（ HC ）：</strong></br>
+一种利用奇偶性来可以检错和纠错，码距为 3 ，
+设数据位有 n 位，校验位有 k 位，则 n 与 k 必须满足以下关系：
+2^k-1 &gt;= n+k</br>
+<strong>循环冗余校验码(CRC)：</strong></br>
+可以检错但不能纠错，码距为 2 ，由 k 个
+数据位 +r 个校验位组成，校验码由信息码产生，校验码位数越多校
+验能力越强，求 CRC 编码时，采用模二运算</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/">计算机结构</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数据的表示</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数据的表示</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数据的表示</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数据的表示</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 Wang_Taowei的技术博客
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.20.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
