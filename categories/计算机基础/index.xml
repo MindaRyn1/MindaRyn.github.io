@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>计算机基础 on 老王同学</title>
+        <link>https://MindaRyn1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</link>
+        <description>Recent content in 计算机基础 on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Wang_Taowei的技术博客</copyright>
+        <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://MindaRyn1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>数据的表示</title>
+        <link>https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/</guid>
+        <description>&lt;h2 id=&#34;数据编码&#34;&gt;数据编码&lt;/h2&gt;
+&lt;p&gt;若用 1 个字节也就是 8bit 来存放数据
+&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/01.png&#34;
+	width=&#34;967&#34;
+	height=&#34;368&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/01_hu9ba1b14d36590ec1e97d827d7e1db964_331608_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/01_hu9ba1b14d36590ec1e97d827d7e1db964_331608_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数据编码&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;262&#34;
+		data-flex-basis=&#34;630px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;最高位为符号位 0 为正数，1 为负数&lt;/li&gt;
+&lt;li&gt;原码不能直接运算（eg，1-1）&lt;/li&gt;
+&lt;li&gt;反码的正数与原码相同，负数符号位不变，其他位置按位取反&lt;/li&gt;
+&lt;li&gt;补码的正数与反码相同，其他位不变，在反码的末位+1&lt;/li&gt;
+&lt;li&gt;移码在补码的基础上，把首位取反，（移码中 0 为负数，1 为正数）
+&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/02.png&#34;
+	width=&#34;811&#34;
+	height=&#34;498&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/02_huedd06d9433205763b39a402e61fc9342_195796_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/02_huedd06d9433205763b39a402e61fc9342_195796_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;范围&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;
+以 8bit 为例&lt;/br&gt;
+原码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)~(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-127~127&lt;/br&gt;
+反码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)~(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-127~127&lt;/br&gt;
+补码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)~(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-128~127（补码因进位表示，故多一位）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;浮点数运算&#34;&gt;浮点数运算&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/03.png&#34;
+	width=&#34;725&#34;
+	height=&#34;279&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/03_hu4ef93da5da053fe3590ae7613c26a9d3_95655_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/03_hu4ef93da5da053fe3590ae7613c26a9d3_95655_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;浮点数&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;259&#34;
+		data-flex-basis=&#34;623px&#34;
+	
+&gt;
+注意使用科学计数法&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
