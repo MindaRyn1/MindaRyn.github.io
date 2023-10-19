@@ -316,14 +316,6 @@
     </li>
     <li><a href="#计算机体系结构分类--flynn">计算机体系结构分类&ndash;Flynn</a></li>
     <li><a href="#cisc-与-risc">CISC 与 RISC</a></li>
-    <li><a href="#流水线技术">流水线技术</a>
-      <ol>
-        <li><a href="#计算流水线总共用时">计算流水线总共用时</a></li>
-        <li><a href="#计算流水线的吞吐率">计算流水线的吞吐率</a></li>
-        <li><a href="#流水线加速比计算">流水线加速比计算</a></li>
-        <li><a href="#流水线的效率">流水线的效率</a></li>
-      </ol>
-    </li>
     <li><a href="#存储结构">存储结构</a>
       <ol>
         <li><a href="#计算机层次存储结构">计算机层次存储结构</a></li>
@@ -331,15 +323,12 @@
         <li><a href="#主存储器">主存储器</a>
           <ol>
             <li><a href="#主存的分类">主存的分类</a></li>
-            <li><a href="#主存的编码">主存的编码</a></li>
           </ol>
         </li>
         <li><a href="#磁盘工作原理">磁盘工作原理</a></li>
       </ol>
     </li>
     <li><a href="#总线系统">总线系统</a></li>
-    <li><a href="#系统可靠性分析">系统可靠性分析</a></li>
-    <li><a href="#效验码">效验码</a></li>
   </ol>
 </nav>
         </div>
@@ -414,7 +403,7 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="font_size_4">
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="font_size_3">
                 数据的表示
             </a>
         
@@ -450,8 +439,8 @@
                 themes
             </a>
         
-            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/" class="font_size_1">
-                计算机结构
+            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="font_size_1">
+                操作系统
             </a>
         
     </div>
@@ -515,7 +504,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -595,49 +584,6 @@ CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、�
 >
 <strong>CISC</strong> 计算机不发达时期的产物，指令多，复杂
 <strong>RISC</strong> 现代计算机，指令少，复杂度低，引入了寄存器，效率高</p>
-<h2 id="流水线技术">流水线技术</h2>
-<p>流水线周期：执行时间最长的一段
-流水线是指在程序执行时，多条指令重叠进行操作的一种准<strong>并行处理</strong>实现技术。
-<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/04.png"
-	width="1196"
-	height="355"
-	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/04_hu1b47c94bb7d0397e8c57f6b920e38b5f_171007_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/04_hu1b47c94bb7d0397e8c57f6b920e38b5f_171007_1024x0_resize_box_3.png 1024w"
-	loading="lazy"
-	
-		alt="流水线"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="336"
-		data-flex-basis="808px"
-	
-></p>
-<h3 id="计算流水线总共用时">计算流水线总共用时</h3>
-<p><strong>一条完整指令的执行时间 = 取指时间 + 分析时间 + 执行时间</strong></br>
-<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/05.png"
-	width="411"
-	height="147"
-	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/05_hue23cdacaeb7e434eb7cbe59225bce6c5_83310_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/05_hue23cdacaeb7e434eb7cbe59225bce6c5_83310_1024x0_resize_box_3.png 1024w"
-	loading="lazy"
-	
-		alt="流水线"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="279"
-		data-flex-basis="671px"
-	
->
-k 为分的段数</p>
-<h3 id="计算流水线的吞吐率">计算流水线的吞吐率</h3>
-<p>吞吐率=指令条数/ 流水线总共用时</br>
-最大吞吐率 = 1 / 流水线周期</p>
-<h3 id="流水线加速比计算">流水线加速比计算</h3>
-<p>S= 不适用流水线执行时间(指令执行时间) / 使用流水线执行时间</br>
-故 S 越大越好</p>
-<h3 id="流水线的效率">流水线的效率</h3>
-<p>E=灰区/总区
-每个工作段的时间相等，体现在图里就是白色区域利用的多，效率往往高</p>
 <h2 id="存储结构">存储结构</h2>
 <h3 id="计算机层次存储结构">计算机层次存储结构</h3>
 <p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06.png"
@@ -679,21 +625,6 @@ k 为分的段数</p>
 <h4 id="主存的分类">主存的分类</h4>
 <p><strong>随机存取存储器：</strong> DRAM 动态 RAM,SRAM 静态 RAM（断电后无法写入保存数据）</p>
 <p><strong>只读存储器：</strong> MROM,PROM,EPROM,flash memory（断电后依然可以写入保存数据）</p>
-<h4 id="主存的编码">主存的编码</h4>
-<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/08.png"
-	width="879"
-	height="533"
-	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/08_hu08274d147ee0afb4257b4f2f0a7786af_582613_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/08_hu08274d147ee0afb4257b4f2f0a7786af_582613_1024x0_resize_box_3.png 1024w"
-	loading="lazy"
-	
-		alt="cache"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="164"
-		data-flex-basis="395px"
-	
-></p>
 <h3 id="磁盘工作原理">磁盘工作原理</h3>
 <p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09.png"
 	width="714"
@@ -709,33 +640,6 @@ k 为分的段数</p>
 		data-flex-basis="496px"
 	
 ></p>
-<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/10.png"
-	width="946"
-	height="455"
-	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/10_hudde6d10c43d5a561e346ac9d8878eb05_696078_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/10_hudde6d10c43d5a561e346ac9d8878eb05_696078_1024x0_resize_box_3.png 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="207"
-		data-flex-basis="498px"
-	
-></p>
-<ol>
-<li>由题意得当 R0 读取完毕，此时 R1 并不在磁针的位置，要等到 R1 转到磁针位置 R0~R10 耗时(33+3)x10。R11 耗时(3+3)</li>
-<li>如图此时为最优分布，总耗时为(3+3)*11<img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/11.png"
-	width="256"
-	height="261"
-	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/11_hu55b4cfadebb8d910082c8f1ccad21b54_61656_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/11_hu55b4cfadebb8d910082c8f1ccad21b54_61656_1024x0_resize_box_3.png 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="98"
-		data-flex-basis="235px"
-	
-></li>
-</ol>
 <h2 id="总线系统">总线系统</h2>
 <ol>
 <li><strong>内部总线</strong></br>
@@ -751,49 +655,6 @@ k 为分的段数</p>
 <li><strong>外部总线</strong></br>
 属于是外部设备的总线。</li>
 </ol>
-<h2 id="系统可靠性分析">系统可靠性分析</h2>
-<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image.png"
-	width="895"
-	height="207"
-	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image_hu13ccf68ac75a008bdbd29e84f3037c11_59260_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image_hu13ccf68ac75a008bdbd29e84f3037c11_59260_1024x0_resize_box_3.png 1024w"
-	loading="lazy"
-	
-		alt="Alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="432"
-		data-flex-basis="1037px"
-	
-></p>
-<ol>
-<li>先判断是串联还是并联</li>
-<li>算出每一个子系统的可靠度</li>
-<li>总体计算可靠度</li>
-</ol>
-<h2 id="效验码">效验码</h2>
-<p><img src="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image-1.png"
-	width="756"
-	height="315"
-	srcset="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image-1_hu10f359d6ef057cd79e57ec1482e77f4c_161371_480x0_resize_box_3.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/image-1_hu10f359d6ef057cd79e57ec1482e77f4c_161371_1024x0_resize_box_3.png 1024w"
-	loading="lazy"
-	
-		alt="Alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="240"
-		data-flex-basis="576px"
-	
->
-<strong>海明码（ HC ）：</strong></br>
-一种利用奇偶性来可以检错和纠错，码距为 3 ，
-设数据位有 n 位，校验位有 k 位，则 n 与 k 必须满足以下关系：
-2^k-1 &gt;= n+k</br>
-<strong>循环冗余校验码(CRC)：</strong></br>
-可以检错但不能纠错，码距为 2 ，由 k 个
-数据位 +r 个校验位组成，校验码由信息码产生，校验码位数越多校
-验能力越强，求 CRC 编码时，采用模二运算</p>
 
 </section>
 
@@ -824,12 +685,12 @@ k 为分的段数</p>
             
                 
 <article class="">
-    <a href="/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/">
+    <a href="/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">数据的表示</h2>
+            <h2 class="article-title">操作系统</h2>
         </div>
     </a>
 </article>
