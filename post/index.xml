@@ -491,6 +491,62 @@
 加入 pv 操作：并发进程操作时加阻塞防止溢出&lt;/p&gt;
 &lt;h2 id=&#34;死锁&#34;&gt;死锁&lt;/h2&gt;
 &lt;p&gt;系统在某个时刻所有的可用的资源都分配出去，所有的进程都等待着其他进程放资源而阻塞，造成死锁&lt;/p&gt;
+&lt;h2 id=&#34;索引文件结构&#34;&gt;索引文件结构&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2.png&#34;
+	width=&#34;612&#34;
+	height=&#34;399&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2_huf206ef3bac9af40deebd38e147e6b56a_178975_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2_huf206ef3bac9af40deebd38e147e6b56a_178975_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;文件结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;368px&#34;
+	
+&gt;
+直接索引：4k* 10&lt;/br&gt;
+1 级间接索引：4k* 1024&lt;/br&gt;
+2 级间接索引：4k* 1024&lt;sup&gt;2&lt;/sup&gt;&lt;/br&gt;
+3 级间接索引：4k* 1024&lt;sup&gt;3&lt;/sup&gt;&lt;/br&gt;
+间接的级别越高，访问效率越低&lt;/p&gt;
+&lt;h2 id=&#34;数据传输方式&#34;&gt;数据传输方式&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;是指内存和外设之间的数据传输问题&lt;/strong&gt;
+&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4.png&#34;
+	width=&#34;793&#34;
+	height=&#34;407&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4_hua22c085e305647ced0c44a7d312ed522_164043_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4_hua22c085e305647ced0c44a7d312ed522_164043_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;467px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;程序控制方式&lt;/strong&gt; 最低级也是 CPU 介入最多的方式，外设处于被动，由 CPU 发出查询指令，查询是否传输成功&lt;/br&gt;
+&lt;strong&gt;程序中断方式&lt;/strong&gt;当完成传输时，会产生中断，提高效率&lt;/br&gt;
+&lt;strong&gt;DMA 方式&lt;/strong&gt; 直接存取控制，有 DMA 控制器控制外设与内存的数据传输&lt;/p&gt;
+&lt;h2 id=&#34;微内核&#34;&gt;微内核&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5.png&#34;
+	width=&#34;829&#34;
+	height=&#34;480&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5_hu9db9b05cd0e7c7f99f2ff0e99d1c9d28_278020_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5_hu9db9b05cd0e7c7f99f2ff0e99d1c9d28_278020_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;172&#34;
+		data-flex-basis=&#34;414px&#34;
+	
+&gt;
+&lt;strong&gt;单体内核&lt;/strong&gt; 减少系统开销，但系统庞大，占用资源多，系统稳定性差&lt;/br&gt;
+&lt;strong&gt;微内核&lt;/strong&gt; 内核精炼，便于移植，系统可靠性，安全性和稳定性高，可用于分布式系统，因需要频繁切换内核和用户态，效率相对较低。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -769,56 +825,96 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>数据的表示</title>
-        <link>https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/</link>
+        <title>数据库系统</title>
+        <link>https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/</link>
         <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/</guid>
-        <description>&lt;h2 id=&#34;数据编码&#34;&gt;数据编码&lt;/h2&gt;
-&lt;p&gt;若用 1 个字节也就是 8bit 来存放数据
-&lt;img src=&#34;https://MindaRyn1.github.io/01.png&#34;
-	
-	
-	
+        <guid>https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;h2 id=&#34;三级模式&#34;&gt;三级模式&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image.png&#34;
+	width=&#34;563&#34;
+	height=&#34;470&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image_hu5a5f847d6ac7a97721c760e1aa36a179_177498_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image_hu5a5f847d6ac7a97721c760e1aa36a179_177498_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;数据编码&#34;
+		alt=&#34;三级模式&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;119&#34;
+		data-flex-basis=&#34;287px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;最高位为符号位 0 为正数，1 为负数&lt;/li&gt;
-&lt;li&gt;原码不能直接运算（eg，1-1）&lt;/li&gt;
-&lt;li&gt;反码的正数与原码相同，负数符号位不变，其他位置按位取反&lt;/li&gt;
-&lt;li&gt;补码的正数与反码相同，其他位不变，在反码的末位+1&lt;/li&gt;
-&lt;li&gt;移码在补码的基础上，把首位取反，（移码中 0 为负数，1 为正数）
-&lt;img src=&#34;https://MindaRyn1.github.io/02.png&#34;
-	
-	
-	
+&lt;h2 id=&#34;数据库设计过程&#34;&gt;数据库设计过程&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-1.png&#34;
+	width=&#34;605&#34;
+	height=&#34;441&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-1_hu1f84d5fd09ba8fc1ea22662866c64a54_173989_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-1_hu1f84d5fd09ba8fc1ea22662866c64a54_173989_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;范围&#34;
+		alt=&#34;数据库&#34;
 	
 	
-&gt;
-以 8bit 为例&lt;/br&gt;
-原码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)~(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-127~127&lt;/br&gt;
-反码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)~(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-127~127&lt;/br&gt;
-补码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)~(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-128~127（补码因进位表示，故多一位）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;浮点数运算&#34;&gt;浮点数运算&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/03.png&#34;
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;137&#34;
+		data-flex-basis=&#34;329px&#34;
 	
-	
-	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;e-r-模型&#34;&gt;E-R 模型&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-2.png&#34;
+	width=&#34;540&#34;
+	height=&#34;439&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-2_hu0a6366125ddaa8d174742e64a36a0fdf_122005_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-2_hu0a6366125ddaa8d174742e64a36a0fdf_122005_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;浮点数&#34;
+		alt=&#34; E-R 模型&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;295px&#34;
 	
 &gt;
-注意使用科学计数法&lt;/p&gt;
+实体与关系模式&lt;/br&gt;
+1 对 1——至少有两种关系模式&lt;/br&gt;
+1 对 多——职工与部门&lt;/br&gt;
+多对多——学生与课程&lt;/p&gt;
+&lt;h2 id=&#34;键&#34;&gt;键&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-3.png&#34;
+	width=&#34;671&#34;
+	height=&#34;406&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-3_hu7966ac3ebacf9fc30f7c58b6b88ce593_102500_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-3_hu7966ac3ebacf9fc30f7c58b6b88ce593_102500_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;165&#34;
+		data-flex-basis=&#34;396px&#34;
+	
+&gt;
+超键与候选键的区别：超键存在冗余&lt;/p&gt;
+&lt;h2 id=&#34;范式&#34;&gt;范式&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-4.png&#34;
+	width=&#34;774&#34;
+	height=&#34;414&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-4_hu41098a1e0f71326d540997b535c7d60b_184042_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-4_hu41098a1e0f71326d540997b535c7d60b_184042_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;186&#34;
+		data-flex-basis=&#34;448px&#34;
+	
+&gt;
+&lt;strong&gt;1NF&lt;/strong&gt; 只包含原子值，每一个分量都是不可再分的数据项&lt;/br&gt;
+&lt;strong&gt;2NF&lt;/strong&gt; 当且仅当 R 是 1NF,且每一个非主属性完全依赖主键(不存在部分函数依赖)&lt;/br&gt;
+&lt;strong&gt;3NF&lt;/strong&gt; 当且仅当 R 是 2NF,且 E 中没有非主属性传递依赖于码(不存在部分函数依赖)&lt;/br&gt;
+&lt;strong&gt;BCNF&lt;/strong&gt; E 中每个依赖关系必定包含 E 的某个候选关键字
+存在问题：数据冗余，插入异常，删除异常，更新异常&lt;/p&gt;
 </description>
         </item>
         <item>
