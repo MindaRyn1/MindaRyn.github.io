@@ -313,6 +313,14 @@
     <li><a href="#e-r-模型">E-R 模型</a></li>
     <li><a href="#键">键</a></li>
     <li><a href="#范式">范式</a></li>
+    <li><a href="#并发控制">并发控制</a></li>
+    <li><a href="#数据库安全">数据库安全</a></li>
+    <li><a href="#数据库备份与恢复">数据库备份与恢复</a>
+      <ol>
+        <li><a href="#分类方式一">分类方式一</a></li>
+        <li><a href="#分类方式二">分类方式二</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -342,7 +350,7 @@
                 JavaSE
             </a>
         
-            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="font_size_5">
+            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="font_size_6">
                 计算机基础
             </a>
         
@@ -488,7 +496,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -588,6 +596,85 @@
 <strong>3NF</strong> 当且仅当 R 是 2NF,且 E 中没有非主属性传递依赖于码(不存在部分函数依赖)</br>
 <strong>BCNF</strong> E 中每个依赖关系必定包含 E 的某个候选关键字
 存在问题：数据冗余，插入异常，删除异常，更新异常</p>
+<h2 id="并发控制">并发控制</h2>
+<p><img src="/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5.png"
+	width="770"
+	height="441"
+	srcset="/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5_hubc04ab8baf63a00c18151ef1187a9c17_242489_480x0_resize_box_3.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5_hubc04ab8baf63a00c18151ef1187a9c17_242489_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="174"
+		data-flex-basis="419px"
+	
+>
+<strong>事务</strong> 把操作封装起来，看作一个整体，这些操作同时完成或同时失败。
+可能出现的问题：</p>
+<ol>
+<li>丢失更新</li>
+<li>不可重复读</li>
+<li>读“脏”数据</li>
+</ol>
+<p>解决办法</p>
+<ol>
+<li>一级封锁协议：事务 T 在修改数据 R 之前必须先对其加 X 锁，防止丢失修改</li>
+<li>二级封锁协议：一级封锁协议加上事务 T 在修改数据 R 之前对其加 S 锁,读完后释放 S 锁，防止读“脏”数据</li>
+<li>三级封锁协议：一级封锁协议加上事务 T 在修改数据 R 之前对其加 S 锁,事务结束才释放 S 锁，防止数据重复读</li>
+</ol>
+<h2 id="数据库安全">数据库安全</h2>
+<p><img src="/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6.png"
+	width="786"
+	height="392"
+	srcset="/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6_hu6fa260a3470013d17bc41a5120babcfb_174957_480x0_resize_box_3.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6_hu6fa260a3470013d17bc41a5120babcfb_174957_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="数据库安全"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="200"
+		data-flex-basis="481px"
+	
+></p>
+<h2 id="数据库备份与恢复">数据库备份与恢复</h2>
+<h3 id="分类方式一">分类方式一</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>备份方式</th>
+<th>特点</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>冷备份(静态备份)</td>
+<td>在数据库正常关闭的状态下将数据库的文件全部备份</td>
+<td>速度快</td>
+<td>不能按表或用户恢复</td>
+</tr>
+<tr>
+<td>热备份(动态备份)</td>
+<td>在数据库正常运行的状态下将数据库的数据文件备份</td>
+<td>可实现恢复某一时间点恢复</td>
+<td>不能出错</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="分类方式二">分类方式二</h3>
+<p><strong>完全备份</strong> 备份所有数据</br>
+<strong>差量备份</strong> 仅备份上次完全备份后变化的数据</br>
+<strong>增量备份</strong> 备份上传备份后变化的数据</p>
+<ol>
+<li><strong>静态海量转储</strong> 系统无运行事务时，转储全部数据库</li>
+<li><strong>动态海量转储</strong> 系统运行事务时，转储全部数据库</li>
+<li><strong>静态增量转储</strong> 系统无运行事务时，转储上次更新的数据</li>
+<li><strong>动态增量转储</strong> 系统运行事务时，转储上次更新的数据</li>
+</ol>
 
 </section>
 
@@ -668,6 +755,19 @@
 </article>
 
             
+                
+<article class="">
+    <a href="/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">计算机网络</h2>
+        </div>
+    </a>
+</article>
+
+            
         </div>
     </div>
 </aside>
@@ -678,18 +778,33 @@
     
 
     <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2023 Wang_Taowei的技术博客
-    </section>
-    
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.20.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
-    </section>
+  <section class="copyright">
+    &copy;  2020 -  2023 Wang_Taowei的技术博客
+  </section>
+
+  <section class="powerby">
+    Built with <a
+      href="https://gohugo.io/"
+      target="_blank"
+      rel="noopener"
+      >Hugo</a
+    >
+    <br />
+    主题 <b
+      ><a
+        href="https://github.com/CaiJimmy/hugo-theme-stack"
+        target="_blank"
+        rel="noopener"
+        data-version="3.20.0"
+        >Stack</a
+      ></b
+    > 由 <a
+      href="https://jimmycai.com"
+      target="_blank"
+      rel="noopener"
+      >Jimmy</a
+    > 设计
+  </section>
 </footer>
 
 

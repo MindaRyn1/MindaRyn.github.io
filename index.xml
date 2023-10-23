@@ -706,6 +706,29 @@ CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、�
 </description>
         </item>
         <item>
+        <title>计算机网络</title>
+        <link>https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
+        <description>&lt;h2 id=&#34;osirm-七层模型&#34;&gt;OSI/RM 七层模型&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image.png&#34;
+	width=&#34;767&#34;
+	height=&#34;380&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image_hu9a92a7365b5dcc0198514747ca8dadd8_195079_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image_hu9a92a7365b5dcc0198514747ca8dadd8_195079_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;201&#34;
+		data-flex-basis=&#34;484px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>数据的表示</title>
         <link>https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/</link>
         <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
@@ -915,6 +938,85 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
 &lt;strong&gt;3NF&lt;/strong&gt; 当且仅当 R 是 2NF,且 E 中没有非主属性传递依赖于码(不存在部分函数依赖)&lt;/br&gt;
 &lt;strong&gt;BCNF&lt;/strong&gt; E 中每个依赖关系必定包含 E 的某个候选关键字
 存在问题：数据冗余，插入异常，删除异常，更新异常&lt;/p&gt;
+&lt;h2 id=&#34;并发控制&#34;&gt;并发控制&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5.png&#34;
+	width=&#34;770&#34;
+	height=&#34;441&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5_hubc04ab8baf63a00c18151ef1187a9c17_242489_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5_hubc04ab8baf63a00c18151ef1187a9c17_242489_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;419px&#34;
+	
+&gt;
+&lt;strong&gt;事务&lt;/strong&gt; 把操作封装起来，看作一个整体，这些操作同时完成或同时失败。
+可能出现的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;丢失更新&lt;/li&gt;
+&lt;li&gt;不可重复读&lt;/li&gt;
+&lt;li&gt;读“脏”数据&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;解决办法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一级封锁协议：事务 T 在修改数据 R 之前必须先对其加 X 锁，防止丢失修改&lt;/li&gt;
+&lt;li&gt;二级封锁协议：一级封锁协议加上事务 T 在修改数据 R 之前对其加 S 锁,读完后释放 S 锁，防止读“脏”数据&lt;/li&gt;
+&lt;li&gt;三级封锁协议：一级封锁协议加上事务 T 在修改数据 R 之前对其加 S 锁,事务结束才释放 S 锁，防止数据重复读&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;数据库安全&#34;&gt;数据库安全&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6.png&#34;
+	width=&#34;786&#34;
+	height=&#34;392&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6_hu6fa260a3470013d17bc41a5120babcfb_174957_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6_hu6fa260a3470013d17bc41a5120babcfb_174957_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数据库安全&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;481px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据库备份与恢复&#34;&gt;数据库备份与恢复&lt;/h2&gt;
+&lt;h3 id=&#34;分类方式一&#34;&gt;分类方式一&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;备份方式&lt;/th&gt;
+&lt;th&gt;特点&lt;/th&gt;
+&lt;th&gt;优点&lt;/th&gt;
+&lt;th&gt;缺点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;冷备份(静态备份)&lt;/td&gt;
+&lt;td&gt;在数据库正常关闭的状态下将数据库的文件全部备份&lt;/td&gt;
+&lt;td&gt;速度快&lt;/td&gt;
+&lt;td&gt;不能按表或用户恢复&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;热备份(动态备份)&lt;/td&gt;
+&lt;td&gt;在数据库正常运行的状态下将数据库的数据文件备份&lt;/td&gt;
+&lt;td&gt;可实现恢复某一时间点恢复&lt;/td&gt;
+&lt;td&gt;不能出错&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;分类方式二&#34;&gt;分类方式二&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;完全备份&lt;/strong&gt; 备份所有数据&lt;/br&gt;
+&lt;strong&gt;差量备份&lt;/strong&gt; 仅备份上次完全备份后变化的数据&lt;/br&gt;
+&lt;strong&gt;增量备份&lt;/strong&gt; 备份上传备份后变化的数据&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;静态海量转储&lt;/strong&gt; 系统无运行事务时，转储全部数据库&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态海量转储&lt;/strong&gt; 系统运行事务时，转储全部数据库&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;静态增量转储&lt;/strong&gt; 系统无运行事务时，转储上次更新的数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态增量转储&lt;/strong&gt; 系统运行事务时，转储上次更新的数据&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
