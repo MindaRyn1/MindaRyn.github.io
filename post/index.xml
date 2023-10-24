@@ -741,9 +741,44 @@ CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、�
 		data-flex-basis=&#34;387px&#34;
 	
 &gt;
-TCP/IP 协议又称重量协议
-IPX/SPX 协议（局域网协议）
-TCP 三次握手协议&lt;/p&gt;
+TCP/IP 协议又称重量协议&lt;/br&gt;
+IPX/SPX 协议（局域网协议）&lt;/br&gt;
+TCP 三次握手协议（可靠，有验证 ）&lt;/br&gt;
+DNS 协议&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;递归查询：目标 ip 与域名 1 对 1&lt;/li&gt;
+&lt;li&gt;迭代查询：目标 ip 与域名的关系，可以是 1 对多&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;计算机网络分类-拓扑结构&#34;&gt;计算机网络分类-拓扑结构&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2.png&#34;
+	width=&#34;673&#34;
+	height=&#34;448&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2_hud5cd61040dab7cb80f0f9fa82ff244d1_137214_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2_hud5cd61040dab7cb80f0f9fa82ff244d1_137214_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;特殊的-ip-地址&#34;&gt;特殊的 IP 地址&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3.png&#34;
+	width=&#34;745&#34;
+	height=&#34;426&#34;
+	srcset=&#34;https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3_hu1dca262d1d1a5d85d08db8e52ec0ad6c_181552_480x0_resize_box_3.png 480w, https://MindaRyn1.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3_hu1dca262d1d1a5d85d08db8e52ec0ad6c_181552_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;419px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
