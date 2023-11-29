@@ -486,8 +486,8 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;shift+F9&lt;/td&gt;
-&lt;td&gt;Debug&lt;/td&gt;
+&lt;td&gt;shift+F6&lt;/td&gt;
+&lt;td&gt;快速更改&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;shift+F10&lt;/td&gt;
@@ -523,12 +523,16 @@
 &lt;td&gt;格式化代码&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;ctrl+Alt+v&lt;/td&gt;
+&lt;td&gt;引入变量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;ctrl+Alt+O&lt;/td&gt;
 &lt;td&gt;优化导入的类，可以对当前文件和整个包目录使用&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;ctrl+Alt+S&lt;/td&gt;
-&lt;td&gt;打开 IntelliJ IDEA 系统设置&lt;/td&gt;
+&lt;td&gt;打开 IDEA 系统设置&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;ctrl+Alt+Enter&lt;/td&gt;
